@@ -33,8 +33,15 @@
      <li v-for="review in reviews">{{ review.text }} AND {{ review.rating }} AND {{ review.reviewer }} </li>
    </ul>
 
-    <input v-model="message">
+    <input v-model="reviews[0].text">
 
+    <div>
+      make a new review:
+      text: <input v-model="newReview.text">
+      reviewer: <input v-model="newReview.reviewer">
+      rating: <input v-model="newReview.rating">
+      <button v-on:click="addReview()">Add review here</button>
+    </div>
   </div>
 </template>
 

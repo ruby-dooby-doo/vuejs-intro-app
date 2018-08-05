@@ -23,11 +23,18 @@ var HomePage = {
           rating: 2,
           reviewer: "Angela Pearson"
         }
-      ]
+      ],
+      newReview: {text: "", reviewer: "", rating: ""}
     };
   },
   created: function() {},
-  methods: {},
+  methods: {
+    addReview: function() {
+      console.log('add to the review');
+      // add the data from the form into the reviews array
+
+    }
+  },
   computed: {}
 };
 
