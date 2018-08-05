@@ -6,7 +6,24 @@ var HomePage = {
     return {
       message: "Hello from Vue.js!",
       message2: "vuejs is a thing",
-      message3: "some other sort of message"
+      message3: "some other sort of message",
+      reviews: [
+        {
+          text: "Vue.js is the best thing since sliced bread!",
+          rating: 5,
+          reviewer: "Burton Wax"
+        },
+        {
+          text: "I love Vue.js, especially when I'm programming!",
+          rating: 4,
+          reviewer: "Emily Post"
+        },
+        {
+          text: "Vue.js is waaaaay better than Chinese Checkers.",
+          rating: 2,
+          reviewer: "Angela Pearson"
+        }
+      ]
     };
   },
   created: function() {},
