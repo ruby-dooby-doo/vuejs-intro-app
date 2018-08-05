@@ -32,7 +32,17 @@ var HomePage = {
     addReview: function() {
       console.log('add to the review');
       // add the data from the form into the reviews array
-
+      // find the data from the form
+      // console.log(this.newReview);
+      // find the array
+      // console.log(this.reviews);
+      // add the data from the form into the array
+      var newReviewInfo = {
+        text: this.newReview.text,
+        rating: this.newReview.rating,
+        reviewer: this.newReview.reviewer
+      };
+      this.reviews.push(newReviewInfo);
     }
   },
   computed: {}
