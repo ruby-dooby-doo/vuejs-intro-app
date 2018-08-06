@@ -30,7 +30,7 @@
 
    <ul>
     <!-- x in xs -->
-     <li v-for="review in reviews">{{ review.text }} AND {{ review.rating }} AND {{ review.reviewer }} </li>
+     <li v-for="review in reviews" v-if="isPositive(review)">{{ review.text }} AND {{ review.rating }} AND {{ review.reviewer }} </li>
    </ul>
 
     <input v-model="reviews[0].text">
