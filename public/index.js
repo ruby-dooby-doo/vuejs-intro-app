@@ -45,15 +45,10 @@ var HomePage = {
       this.reviews.push(newReviewInfo);
     },
     isPositive: function(inputReview) {
-      console.log('isPositive');
-      console.log(inputReview);
-      // if the review has the string 'bad' in it, the review is negative
-      if (inputReview.text.includes('bad')) {
-        return false;
-      } else {
-        return true;
-      }
-      // if the review doesn't have the string 'bad' in it, the review is positive
+      console.log('running isPositive');
+      return !inputReview.text.includes('bad');
+      // return true if 'bad' does NOT exist
+      // return false if 'bad' does exist
     }
   },
   computed: {}
